@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#d41e13">
+  <meta name="author" content="Angst">
+  <title>Angst.github.io</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="assets/stylesheets/stylesheet.css">
+</head>
+<body>
+  <!-- Intro (typed text) -->
+  <div id="main" class="main">
+    <div class="top-right"><i><a href="#" class="skip">skip intro</a></i></div>
+    <div class="box">
+      <pre><span id="line1"></span></pre>
+      <pre><span id="line2"></span></pre>
+      <pre><span id="line3"></span></pre>
+      <pre><span id="line4"></span></pre>
+    </div>
+  </div>
+  <div class="middle"></div>
+
+  <!-- Main content (shown after intro) -->
+  <div class="container" style="display:none;">
+    <h1 class="brand-header"><a href="https://steamcommunity.com/profiles/76561198417487813" target="_blank">Angst</a></h1>
+    <pre><span id="brand"></span></pre>
+  </div>
+
+  <div class="marquee-container" style="visibility:hidden;">
+    <div id="marquee"></div>
+  </div>
+
+  <div class="footer"><i>&copy; Angst</i></div>
+
+  <!-- Background video + music -->
+  <div class="background" style="display:none;">
+    <div id="pattern"></div>
+    <div id="background"></div>
+    <video id="gommemode" loop playsinline>
+      <source src="assets/others/liluzi.mp4" type="video/mp4">
+    </video>
+  </div>
+  <audio id="audio" loop>
+    <source src="assets/others/liluzi.mp4" type="video/mp4">
+  </audio>
+
+  <script src="assets/javascript/lib/jquery-3.1.1.min.js"></script>
+  <script src="assets/javascript/lib/jquery.cookie.min.js"></script>
+  <script src="assets/javascript/lib/jquery.marquee.min.js"></script>
+  <script src="assets/javascript/lib/typed.min.js"></script>
+  <script src="assets/javascript/app.js"></script>
+  <script>
+    app.videoElement = document.getElementById("gommemode");
+    app.audioElement = document.getElementById("audio");
+    app.videoElement.muted = true; // video is silent; sound comes from #audio
+    app.audioElement.volume = 0;
+  </script>
+  <script src="assets/javascript/portfolio.js"></script>
+</body>
+</html>
